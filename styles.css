@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Specify the correct font format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.terminal {
+    background-color: #000;
+    color: #b3ebb3; /* Green text color */
+    font-family: 'VCR OSD Mono', 'Arial', sans-serif;
+    padding: 20px;
+    border: 2px solid #8eb68e; /* Green border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevent the background from clipping into the image */
+    width: 72%; /* Set a width of 80% to leave 20% space on the left */
+    margin-left: 20px; /* Add margin to the left side */
+}
+
+.terminal pre {
+    white-space: pre-wrap; /* Preserve line breaks and spacing */
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'VCR OSD Mono', 'Arial', sans-serif;
+    margin-top: 20px; /* Add margin to the top of the pre element */
+}
+
+.image-box {
+    float: right;
+    width: 20%;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #ff6f61; /* Neon orange border */
+    border-radius: 10px;
+    background-color: #222;
+    clear: right; /* Clear the float to prevent text from wrapping around */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 100%; /* Ensure the image takes the full width of the .image-box */
+    height: auto;
+    margin-bottom: 10px; /* Add margin to separate the image from text */
+    border-radius: 10px;
+}
+
+.image-box .description {
+    padding-top: 10px;
+}
+
+.image-box .description h2 {
+    color: #ff6f61;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'VCR OSD Mono', 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #ff6f61; /* Neon orange color */
+}
+
+.content {
+    padding: 20px;
+    font-family: 'VCR OSD Mono', 'Arial', sans-serif; 
+    
+}
+
+.content h2 {
+    color: #ff6f61;
+}
+
+.mini {
+    font-size: 40px;
+}
+
+
+.content p {
+    font-size: 18px;
+}
+
+h3 {
+    color: #f3a39c;
+}
+
+.terminaldata {
+    color: #b3ebb3;
+}
+
+.slideshow-container {
+    display: flex; /* Use flexbox to align images horizontally */
+    overflow: hidden; /* Hide the overflow to create a swipe effect */
+    width: 100%; /* Adjust width as needed */
+}
+
+/* Individual slides */
+.mySlides {
+    flex: 0 0 100%; /* Each slide takes up 100% of the container width */
+    transition: transform 1s ease; /* Add a smooth transition effect */
+}
+
+/* Style for each image */
+.mySlides img {
+    max-width: 100%; /* Adjust image width as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(0); /* Start at the initial position */
+    }
+    100% {
+        transform: translateX(-200%); /* Slide all the way to the left */
+    }
+}
+

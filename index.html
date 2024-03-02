@@ -1,11 +1,90 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>V1 the Robot</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-    <h1>TEST</h1>
-    <p>TEST PARAGRAPH</p>
+    <header class="header">
+        <h1>V1 the Robot</h1>
+    </header>
+    <div class="content">
+        <h2>About V1 the Robot</h2>
+        <p>
+            V1 is the first version of the V model, an earlier prototype that came before V2. It specializes in quick repairs, using experimental armor plating that can absorb Blood on contact rather than a separate blood refueling process.
+        </p>
+        <p>
+            On its back are eight glowing wing-like protrusions that enable its aerial maneuverability, dashing, and continuous sliding, along with storing weapons that are not in use.
+
+        </p>
+        <div class="image-box">
+                
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="Untitled (1).png" alt="Image 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Untitled (2).png" alt="Image 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Untitled.png" alt="Image 3">
+                </div>
+            </div>
+            <script>
+                        var slideIndex = 0;
+                            showSlides();
+
+                            function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {
+                                    slideIndex = 1;
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                            }
+            </script>
+            
+            <div class="description">
+                <h2>V1 the Robot</h2>
+                <p>Blody :></p>
+            </div>
+        </div>
+        <p class="mini">‎</p>
+        <h3 class="terminaldata">Terminal Data</h3>
+    </div>
+
+    <div class="terminal">
+        <pre>
+The V model was built for war, with V1 boasting a new kind of exterior plating that allowed refueling through contact with blood rather than through a separate refueling process.
+
+Due to its necessary thinness, it is far less durable, but the ability to fix itself and rebuild broken parts on the fly would outweigh the negatives on an active battlefield.
+
+However, during the prototyping phase, the New Peace was established, and war became irrelevant. V1’s planned production was canceled, and an updated model, V2, was developed instead, using the standardized plating, since durability was far more important during times of peace when no bloodshed was necessary,
+</pre>
+    </div>
+
+    <div class="content">
+        <div class="vone">
+            <h2>V1 the Robot</h2>
+        </div>
+        
+        <h3>Abilities</h3>
+        <p>
+            V1, as a blood-fueled death machine, is capable of moving in all directions with equal speed, can jump, dash, slide, wall jump, and slam onto the ground from heights. By default, it has 3 stamina bars at maximum.
+        </p>
+     
+        <h3>Weapons</h3>
+        <p>
+            V1, being built for war, can equip and make use of a wide variety of weapons. Some artwork implies that its weapons are stored in its wing-like protrusions.
+        </p>
+    </div>
 </body>
 </html>
